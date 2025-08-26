@@ -1,5 +1,5 @@
 # FTK Imager: A Forensic Imaging Tool Overview
-This repository provides a comprehensive overview of **FTK Imager**, a widely-used tool in digital forensics for creating forensic images and previewing digital evidence.
+
 
 
 ## What is FTK Imager?
@@ -219,3 +219,4 @@ A window will appear asking you to choose the source type:
 
 - [FTK Imager Official Website](https://accessdata.com/product-download/ftk-imager-version-4-5)  
 - FTK Imager Documentation
+
