@@ -1,30 +1,4 @@
-# FTK Imager: A Forensic Imaging Tool Overview
-
-
-
-## What is FTK Imager?
-**FTK (Forensic Toolkit) Imager** is a free data preview and imaging tool from Exterro (formerly AccessData). It allows for the acquisition of electronic evidence in a **forensically sound manner** by creating exact copies (forensic images) of computer data without altering the original evidence. This is a critical first step in any digital investigation.
-
-
-The evidence FTK Imager can acquire can be split into two main parts. They are:
-1. **Volatile memory** (RAM)  
-2. **Non-volatile memory** (Hard disk)
----
-
-## Usage Methods
-There are two main ways FTK Imager can be used for forensic image acquisition:
-
-1. **Using the portable version**  
-   - Run FTK Imager directly from a USB pen drive or external HDD on the evidence machine.  
-   - Commonly used for **live data acquisition** while the evidence PC/laptop is switched on.
-
-2. **Installing on the investigator’s laptop**  
-   - The source disk should be connected via a **write-blocker** to maintain integrity.  
-   - The write-blocker allows **read-only access**, preventing modifications to the original evidence.
-
----
-
-
+# Ex.No.1    FTK Imager: A Forensic Imaging Tool Overview
 
 ## Acquiring Volatile Memory (RAM) Using FTK Imager
 <br>
@@ -219,4 +193,5 @@ A window will appear asking you to choose the source type:
 
 - [FTK Imager Official Website](https://accessdata.com/product-download/ftk-imager-version-4-5)  
 - FTK Imager Documentation
+
 
