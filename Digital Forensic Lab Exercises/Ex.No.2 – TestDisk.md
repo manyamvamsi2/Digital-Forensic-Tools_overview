@@ -1,16 +1,9 @@
-# TestDisk: Open-Source Data Recovery Tool
-**TestDisk** is a powerful open-source data recovery tool designed to help recover lost partitions and make non-booting disks<br> bootable again. It works on a variety of file systems and platforms and is widely used by forensic investigators, system administrators, and technical enthusiasts.
-
----
+#  Ex.No.2    TestDisk: Open-Source Data Recovery Tool
 
 ## Aim :
 To use TestDisk step by step to recover a missing partition and repair a corrupted one.
 
 
-## 📋 Prerequisites
-TestDisk: The program must be installed and accessible.
-
-Access Privileges: You must run the program with administrator (Windows) or root (Linux/macOS) privileges.
 
 ## 🛠️ Installation
 Linux (Debian/Ubuntu): sudo apt-get install testdisk
