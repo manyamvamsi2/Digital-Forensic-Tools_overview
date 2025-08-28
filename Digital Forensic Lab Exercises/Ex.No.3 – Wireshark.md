@@ -1,12 +1,4 @@
-# Wireshark – Network Packet Capture and Analysis Tool
-
-## Introduction to Wireshark
-
-Wireshark is a powerful and widely used network protocol analyzer. It allows you to "see" what's happening on your network at a microscopic level. It captures network packets in real time and displays them in a human-readable format. This is incredibly useful for network administrators to troubleshoot issues, for developers to debug protocols, and for security professionals to analyze traffic.
-
-A key educational use of Wireshark is demonstrating the insecurity of unencrypted protocols. Any data, including usernames and passwords, sent over protocols like HTTP, FTP, or Telnet is transmitted in plaintext. This means anyone on the same network can easily capture and read this information.
-
-----
+#   Ex.No.3   Wireshark – Network Packet Capture and Analysis Tool
 
 
 ## Procedure: Capturing Plaintext Passwords
