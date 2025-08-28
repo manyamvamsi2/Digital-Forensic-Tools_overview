@@ -7,8 +7,8 @@ This repository contains the lab exercises for the **Digital Forensics Laborator
 
 ## List of Experiments
 
-<a href="./Digital%20Forensic%20Lab%20Exercises/FTK-Imager.md" target="_blank">Ex.No.1 – FTK Imager</a>  
-<a href="./Digital%20Forensic%20Lab%20Exercises/TestDisk.md" target="_blank">Ex.No.2 – TestDisk</a>  
-<a href="./Digital%20Forensic%20Lab%20Exercises/Wireshark.md" target="_blank">Ex.No.3 – Wireshark</a>  
+<a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.1%20–%20FTK%20Imager.md" target="_blank">Ex.No.1 – FTK Imager</a>  
+<a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.2%20–%20TestDisk.md" target="_blank">Ex.No.2 – TestDisk</a>  
+<a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.3%20–%20Wireshark.md" target="_blank">Ex.No.3 – Wireshark</a>  
 <a href="./Ex.No.4%20MHA/README.md" target="_blank">Ex.No.4 – Mail Header Analysis (MHA)</a>  
 <a href="./Ex.No.5%20Autopsy/README.md" target="_blank">Ex.No.5 – Autopsy</a>  
