@@ -12,3 +12,4 @@ This repository contains the lab exercises for the **Digital Forensics Laborator
 <a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.3%20–%20Wireshark.md" target="_blank">Ex.No.3 – Wireshark</a>  
 <a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.4-Mail%20Header%20Analyzer.md" target="_blank">Ex.No.4 – Mail Header Analysis (MHA)</a>  
 <a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.5-Autopsy.md" target="_blank">Ex.No.5 – Autopsy</a>  
+<a href="./Digital%20Forensic%20Lab%20Exercises/Ex.No.6%20-%20%20Sleuth%20Kit.md" target="_blank">Ex.No.6 – The Sleuth Kit</a> 
