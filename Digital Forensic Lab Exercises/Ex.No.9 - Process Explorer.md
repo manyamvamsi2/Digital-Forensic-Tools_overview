@@ -1,81 +1,51 @@
-## 🕵️ Ex.No.9: Use Process Explorer to Identify Suspicious Processes
+# Ex.No.9 — Using Procmon to Identify Suspicious Processes
 
-**Description**
+## Aim
+To monitor and identify suspicious process activities in a Windows system using **Procmon (Process Monitor)**.
 
-**Process Explorer** is a powerful Windows tool that provides detailed information about running processes, allowing users to monitor, troubleshoot, and detect suspicious activities. It can be used to detect potential malware or harmful processes by analyzing various aspects of running applications.
+## Introduction
+**Procmon** is a Windows Sysinternals tool used for real-time monitoring of system activities such as file system access, registry modifications, process creation, and network operations. It helps in malware analysis, troubleshooting system issues, and detecting unauthorized or malicious behaviors by providing detailed logs of all running processes.
 
----
+## Required Software
+- **Procmon (Process Monitor)** — Download from the official Microsoft Sysinternals site:  
+  🔗 [https://learn.microsoft.com/en-us/sysinternals/downloads/procmon](https://learn.microsoft.com/en-us/sysinternals/downloads/procmon)
+- **Windows OS** (any version with administrative privileges)
 
-### Step 1: Download and Set Up Process Explorer
+## Procedure
+1. **Download and extract Procmon** from the Microsoft Sysinternals site.
+2. **Run Procmon as Administrator** to allow system-level monitoring.
+   <p align="center">
+       <img width="1414" height="872" alt="image" src="https://github.com/user-attachments/assets/c3f5f5f2-cdfa-4bd5-9653-9d6d0632d95e" />
+   </p>
+4. **Start Capture** by clicking the **Capture Events (Ctrl + E)** icon.
+  <p align="center">
+    <img width="1420" height="868" alt="image" src="https://github.com/user-attachments/assets/1a8a45ea-ba33-4727-9071-545076b9a2b7" />
+  </p>
 
-* **Download Process Explorer:**
-    Go to the official Microsoft Sysinternals website and download Process Explorer.
-* **Extract the Program:**
-    Extract the ZIP file to a folder.
-* **Run Process Explorer:**
-    Open the folder and run `procexp64.exe` or `procexp.exe` as **Administrator** (by right-clicking and selecting "Run as Administrator").
+6. Perform normal or suspicious operations (e.g., run unknown executables).
+7. **Stop Capture** after sufficient data collection.
+8. **Filter the events**:
+   - Go to *Filter → Filter...*
+   - Add filters such as:
+     - `Process Name contains suspicious.exe`
+     - `Operation contains WriteFile` or `CreateProcess`
 
----
+ <p align="center">
+      <img width="948" height="647" alt="image" src="https://github.com/user-attachments/assets/357d7583-bcc5-4380-a340-3cfd831074bc" />
+ </p>
+ 
+9. Analyze the logs:
+   - Check **Process Tree** to view parent-child relationships.
+   - Identify unexpected registry changes or file access.
+   - Export suspicious events to CSV for reporting.
+   
+<p align="center">
+    <img width="1621" height="1200" alt="image" src="https://github.com/user-attachments/assets/cc4cf7ee-889a-4195-a373-b6bcdb3e26bb" />
 
-### Step 2: Familiarize Yourself with the Interface
+</p>
 
-The interface lists all running processes in a tree structure. Processes are **color-coded** for status:
+10. **Close Procmon** and review captured data for persistence or injection signs.
 
-| Color | Meaning |
-| :--- | :--- |
-| **Pink** | Suspended processes. |
-| **Light Blue** | Processes running under the same user as you. |
-| **Dark Blue** | Services or processes running under system accounts. |
-| **Green** | New processes. |
-| **Red** | Processes that have just exited. |
+## Result
+Successfully used **Procmon** to capture and analyze system process activities. Suspicious processes performing abnormal registry modifications, file writes, or network access were identified, providing insights into potential malicious behavior.
 
----
-
-### Step 3: Identify Suspicious Processes
-
-Follow these steps to investigate potentially suspicious processes:
-
-1.  **Look for Unfamiliar Processes:**
-    * Scan for names you don't recognize. **Legitimate processes** are usually from trusted sources (Microsoft, Intel, Adobe, etc.).
-2.  **Verify Digital Signatures:**
-    * Right-click the process $\rightarrow$ **Properties** $\rightarrow$ **Image** tab.
-    * Check if the process has a valid **Digital Signature**. Processes without signatures are suspicious.
-3.  **Check the Path of the Process:**
-    * In **Properties** $\rightarrow$ **Image** tab, check the **Path**.
-    * **Suspicious:** Running from temporary folders, user folders, or random directories (should typically be in `C:\Windows\System32` for system processes).
-4.  **Monitor CPU, Memory, and Disk Usage:**
-    * Look for a process using an **unusually high amount of resources** without explanation (e.g., high CPU usage on a background process).
-5.  **Check Process Description and Company Name:**
-    * **Suspicious:** Lack of information or unclear company names.
-6.  **Check the Process Network Activity:**
-    * Right-click $\rightarrow$ **Properties** $\rightarrow$ **TCP/IP** tab.
-    * **Suspicious:** Unexpected or unexplained external connections.
-
----
-
-### Step 4: Perform a Google Search on Suspicious Processes
-
-* **Search online:** Use the process name (e.g., `processname.exe`) to check its reputation.
-* **Check Malware Databases:** Verify the process against online databases like **VirusTotal** or **ProcessLibrary**.
-
----
-
-### Step 5: Kill or Suspend Suspicious Processes
-
-* **Kill the Process:**
-    Right-click $\rightarrow$ **Kill Process** to terminate it immediately.
-* **Suspend the Process:**
-    Right-click $\rightarrow$ **Suspend** to stop execution temporarily for further investigation.
-* **Remove the Source File:**
-    Locate the executable using the Path and **delete the file** if confirmed to be malware.
-
----
-
-### Step 6: Scan Your System
-
-* Run a **full antivirus scan**.
-* Use **Malware Removal Tools** (like Malwarebytes or Windows Defender) for an in-depth system scan.
-
-***
-
-Would you like the Markdown syntax for the **StegExpose** guide or the **AFLogical OSE** guide again?
