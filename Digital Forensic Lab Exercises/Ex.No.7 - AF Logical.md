@@ -191,6 +191,17 @@ C:\Users\Manya\Downloads
 
 
 ---
+---
+
+##  **Result**
+
+The experiment successfully demonstrated the logical extraction of user data from an Android device using **AFLogical OSE**.  
+After configuring **ADB**, installing **AFLogical-OSE.apk**, and enabling **USB Debugging**, the tool extracted key artifacts such as **Contacts**, **SMS**, **Call Logs**, and **Calendar entries**.  
+
+The extracted data was stored in:
+```bash
+/sdcard/aflogical/
+```
 ## **Reference Links**
 - **Android Platform Tools (ADB):** [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)  
 - **Santoku Linux (Source for AFLogical OSE):** [https://sourceforge.net/projects/santoku/](https://sourceforge.net/projects/santoku/)  
