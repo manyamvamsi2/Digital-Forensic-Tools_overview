@@ -1,78 +1,66 @@
-# Ex.No.8 — Detect Hidden Data in Images Using StegExpose
+# Ex.No.8 — Detect Hidden Data in Images Using zsteg (Linux)
 
 ## Aim
-To detect hidden (steganographic) data in image files using the **StegExpose** tool and analyze its detection accuracy.
+To detect and extract hidden or steganographic data from image files using the **zsteg** tool in Linux.
 
----
+## Introduction
+Steganography is the process of hiding information within digital media such as images or audio files. Cybercriminals may use this technique to conceal malicious payloads or secret messages. **zsteg** is a powerful open-source tool that detects and extracts hidden data from PNG and BMP files using Least Significant Bit (LSB) steganography and other common methods. This experiment demonstrates how to analyze and extract such hidden data using zsteg.
 
-## Objective
-1. Understand the concept of **steganography** and **steganalysis**.  
-2. Learn how to use **StegExpose** to detect hidden data in image files.  
-3. Analyze detection results using different images with and without embedded data.
-
----
-
-## Requirements
-- **Operating System:** Windows / Linux  
-- **Software:** Java (JDK 8 or above)  
-- **Tool:** StegExpose.jar  
-- **Input Files:** A set of normal and steganographically modified image files (e.g., `.jpg`, `.png`)
-
----
-
-## Theory
-**Steganography** is the technique of hiding data within non-secret files such as images, audio, or videos.  
-**Steganalysis** is the process of detecting such hidden information.
-
-**StegExpose** is an open-source tool that uses multiple steganalysis techniques to detect hidden data in images.  
-It combines several detectors such as:
-- **Sample Pair Analysis (SPA)**
-- **RS Analysis**
-- **Chi-Square Attack**
-- **Primary Sets**
-
-These techniques analyze pixel patterns and statistical irregularities to determine whether an image contains hidden data.
-
----
-
-## Algorithm / Procedure
-1. **Download and Install StegExpose**
-   - Download `StegExpose.jar` from GitHub.
-   - Ensure Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed.
-   
-   <img width="1891" height="956" alt="image" src="https://github.com/user-attachments/assets/8f6f5aa9-c907-4868-b9b8-3f249939fc0e" />
-
-
-2. **Prepare Image Files**
-   - Collect two types of images:
-     - Original images (no hidden data)
-     - Steganographic images (data embedded using tools like OpenStego, SilentEye, etc.)
-
-3. **Run StegExpose**
-   - Open the Command Prompt or Terminal.
-   - Navigate to the folder containing `StegExpose.jar` and images.
-   - Run the following command:
-     ```
-     java -jar StegExpose.jar <image_folder_path> -t 0.2 -a
-     ```
-     Here:
-     - `<image_folder_path>` = path to your image directory
-     - `-t 0.2` = threshold value (default 0.2)
-     - `-a` = analyze all images
-
-4. **Observe the Output**
-   - StegExpose generates a CSV report named `StegExposeResults.csv`.
-   - The report shows:
-     - File name
-     - Suspiciousness score
-     - Classification (Clean / Stego)
-
-5. **Interpret Results**
-   - If the suspicion level exceeds the threshold, the image is flagged as **Stego**.
-   - Compare detection accuracy for different threshold values.
-
----
-
-## Sample Command
+## Required Software (Download / Install Before Starting)
 ```bash
-java -jar StegExpose.jar C:\Images -t 0.3 -a
+sudo apt update
+sudo apt install ruby ruby-dev build-essential
+sudo gem install zsteg
+sudo apt install imagemagick  # optional for image visualization
+```
+
+## Procedure
+1. Open the terminal on your Linux system.  
+2. Place the suspect image file (e.g., `suspect.png`) in your working directory.  
+3. Run zsteg to analyze the image for hidden data:  
+   ```bash
+   zsteg dog.png
+   ```
+   <p align="center">
+       <img width="811" height="293" alt="image" src="https://github.com/user-attachments/assets/7b2cf64d-d74e-499c-8908-906bbd9c6cae" />
+   </p>
+<br>
+<br>
+<p align="center">
+   <img width="820" height="303" alt="image" src="https://github.com/user-attachments/assets/6284c368-417c-4d8b-9e0f-84bb7b771dbe" />
+</p>
+
+4. To analyze all PNG files in a folder:  
+   ```bash
+   for f in *.png; do echo "=== $f ==="; zsteg "$f"; done
+   ```
+<p align="center">
+  <img width="1694" height="922" alt="image" src="https://github.com/user-attachments/assets/8cc4d624-4e9c-4cb0-a527-7248fae190ce" />
+</p>
+
+
+5. When zsteg detects hidden data, extract it using the `-E` flag:  
+   ```bash
+   zsteg -E all suspect.png > extracted_data.bin
+   ```
+6. Check the extracted file type and content:  
+   ```bash
+   file extracted_data.bin
+   strings extracted_data.bin | less
+   hexdump -C extracted_data.bin | head
+   ```
+7. Record findings such as file name, detection method, and extracted data type.
+
+
+
+## Result
+Hidden information was successfully detected and extracted from the given image using **zsteg** on Linux.
+
+## Notes
+- **zsteg** works best on PNG and BMP images.  
+- Always analyze copies of original evidence.  
+- Use checksum tools like `sha256sum` to verify file integrity.  
+- Try specific color channels if no data is found:  
+  ```bash
+  zsteg -E bgr,lsb,xy,1 suspect.png
+  ```
