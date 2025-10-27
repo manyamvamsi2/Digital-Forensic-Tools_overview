@@ -39,6 +39,9 @@ These techniques analyze pixel patterns and statistical irregularities to determ
 1. **Download and Install StegExpose**
    - Download `StegExpose.jar` from GitHub.
    - Ensure Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed.
+   
+   <img width="1891" height="956" alt="image" src="https://github.com/user-attachments/assets/8f6f5aa9-c907-4868-b9b8-3f249939fc0e" />
+
 
 2. **Prepare Image Files**
    - Collect two types of images:
