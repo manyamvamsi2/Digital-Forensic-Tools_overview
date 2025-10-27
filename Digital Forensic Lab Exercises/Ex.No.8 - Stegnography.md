@@ -1,71 +1,75 @@
-## 🕵️ Ex.No.8: Use Steg-Expose to Detect Hidden Data in Images
+# Ex.No.8 — Detect Hidden Data in Images Using StegExpose
 
-**Description**
-
-**StegExpose** is a tool used to detect hidden data in images using steganography analysis. It works by evaluating the statistical properties of an image to estimate whether any hidden data is embedded. Below is a step-by-step guide on how to use StegExpose to detect hidden data in images:
-
----
-
-### Prerequisites
-
-* **Java Runtime Environment (JRE):** StegExpose is a Java-based tool, so ensure you have JRE installed.
-* **StegExpose Tool:** Download StegExpose from the official GitHub repository.
+## Aim
+To detect hidden (steganographic) data in image files using the **StegExpose** tool and analyze its detection accuracy.
 
 ---
 
-### Step-by-Step Process
+## Objective
+1. Understand the concept of **steganography** and **steganalysis**.  
+2. Learn how to use **StegExpose** to detect hidden data in image files.  
+3. Analyze detection results using different images with and without embedded data.
 
-#### 1. Download and Set Up StegExpose
-* **Download the tool:** Go to StegExpose GitHub and download the **StegExpose.jar** file..
-* **Install Java:** Ensure that Java is installed on your machine.
-* **Prepare environment:** Place the **.jar** file in a folder where you plan to work on the image files.
+---
 
-#### 2. Select Images for Analysis
-* Collect the images you suspect might have hidden data. StegExpose supports formats such as **.png**, **.jpg**, **.bmp**, etc.
+## Requirements
+- **Operating System:** Windows / Linux  
+- **Software:** Java (JDK 8 or above)  
+- **Tool:** StegExpose.jar  
+- **Input Files:** A set of normal and steganographically modified image files (e.g., `.jpg`, `.png`)
 
-#### 3. Open Command Line or Terminal
-* Navigate to the folder where you have saved the `StegExpose.jar` file.
-* Open your Command Prompt (Windows) or Terminal (Linux/macOS).
+---
 
-#### 4. Run StegExpose on an Image
-* Use the following command to check a single image for hidden data:
+## Theory
+**Steganography** is the technique of hiding data within non-secret files such as images, audio, or videos.  
+**Steganalysis** is the process of detecting such hidden information.
 
-    ```bash
-    java -jar StegExpose.jar <image_file_path>
-    ```
+**StegExpose** is an open-source tool that uses multiple steganalysis techniques to detect hidden data in images.  
+It combines several detectors such as:
+- **Sample Pair Analysis (SPA)**
+- **RS Analysis**
+- **Chi-Square Attack**
+- **Primary Sets**
 
-    **Example:**
-    ```bash
-    java -jar StegExpose.jar test_image.png
-    ```
+These techniques analyze pixel patterns and statistical irregularities to determine whether an image contains hidden data.
 
-#### 5. Analyze the Output
-* The tool analyzes the image and provides a score.
-* **StegExpose calculates a "suspect" score (between 0 and 1).** The higher the score, the more likely that hidden data is present.
-* **Threshold values (suggested by the tool):**
-    * Less than 0.2: Image is clean (no hidden data).
-    * 0.2 - 0.3: Possibly some hidden data.
-    * Above 0.3: Likely that steganography is present.
+---
 
-#### 6. Batch Analysis (Multiple Images)
-* If you have multiple images to check, you can analyze them in bulk by specifying a folder:
+## Algorithm / Procedure
+1. **Download and Install StegExpose**
+   - Download `StegExpose.jar` from GitHub.
+   - Ensure Java Runtime Environment (JRE) or Java Development Kit (JDK) is installed.
 
-    ```bash
-    java -jar StegExpose.jar <folder_path>
-    ```
+2. **Prepare Image Files**
+   - Collect two types of images:
+     - Original images (no hidden data)
+     - Steganographic images (data embedded using tools like OpenStego, SilentEye, etc.)
 
-#### 7. Advanced Options (Optional)
-* Use `--help` to see the list of options:
+3. **Run StegExpose**
+   - Open the Command Prompt or Terminal.
+   - Navigate to the folder containing `StegExpose.jar` and images.
+   - Run the following command:
+     ```
+     java -jar StegExpose.jar <image_folder_path> -t 0.2 -a
+     ```
+     Here:
+     - `<image_folder_path>` = path to your image directory
+     - `-t 0.2` = threshold value (default 0.2)
+     - `-a` = analyze all images
 
-    ```bash
-    java -jar StegExpose.jar --help
-    ```
+4. **Observe the Output**
+   - StegExpose generates a CSV report named `StegExposeResults.csv`.
+   - The report shows:
+     - File name
+     - Suspiciousness score
+     - Classification (Clean / Stego)
 
-#### 8. Review the Results
-* Example Output:
+5. **Interpret Results**
+   - If the suspicion level exceeds the threshold, the image is flagged as **Stego**.
+   - Compare detection accuracy for different threshold values.
 
-    ```makefile
-    Analyzing suspect_image.png...
-    Result: 0.4
-    Steganography likely present
-    ```
+---
+
+## Sample Command
+```bash
+java -jar StegExpose.jar C:\Images -t 0.3 -a
