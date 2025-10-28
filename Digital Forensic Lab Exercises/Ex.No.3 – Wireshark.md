@@ -1,5 +1,8 @@
 #   Ex.No.3   Wireshark – Network Packet Capture and Analysis Tool
 
+## **Aim:**
+To capture network traffic using **Wireshark** and demonstrate the interception of **plaintext credentials** sent over unencrypted **HTTP** (via an HTTP POST), thereby illustrating the security risks of transmitting sensitive data without encryption.
+
 
 ## Procedure: Capturing Plaintext Passwords
 
@@ -12,7 +15,7 @@
   <br>
    <br>
   <p align="center">
-  <img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/7b4199c8-c62c-4122-8a86-9fee5c4cd052" />
+  <img width="1919"  alt="image" src="https://github.com/user-attachments/assets/7b4199c8-c62c-4122-8a86-9fee5c4cd052" />
   </p>
   <br>
   <br>
@@ -21,7 +24,7 @@
  <br>
    <br>
   <p align="center">
-  <img width="1915" height="1199" alt="image" src="https://github.com/user-attachments/assets/657a7947-c9f8-4f01-88c0-5ddab2b85fb7" />
+  <img width="1915"  alt="image" src="https://github.com/user-attachments/assets/657a7947-c9f8-4f01-88c0-5ddab2b85fb7" />
  </p>
   <br>
   <br>
@@ -40,7 +43,7 @@
  <br>
    <br>
   <p align="center">
-<img width="1916" height="1149" alt="image" src="https://github.com/user-attachments/assets/7d2d782c-2c77-4dfa-bfe5-3760489949bb" />
+<img width="1916"  alt="image" src="https://github.com/user-attachments/assets/7d2d782c-2c77-4dfa-bfe5-3760489949bb" />
  </p>
   
   
@@ -55,7 +58,7 @@
  <br>
    <br>
   <p align="center">
-<img width="1919" height="1199" alt="image" src="https://github.com/user-attachments/assets/8557c1c5-a6ae-4426-b9de-93ecf0997a59" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/8557c1c5-a6ae-4426-b9de-93ecf0997a59" />
  </p>
   <br>
   <br>
@@ -75,7 +78,7 @@ HTML Form URL Encoded
  <br>
    <br>
   <p align="center">
-  <img width="1919" height="1195" alt="image" src="https://github.com/user-attachments/assets/3b2833a8-7008-4bb7-8f67-c295049e9364" />
+  <img width="1919"  alt="image" src="https://github.com/user-attachments/assets/3b2833a8-7008-4bb7-8f67-c295049e9364" />
  </p>
   <br>
   <br>
