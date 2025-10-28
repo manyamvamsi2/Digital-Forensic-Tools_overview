@@ -8,7 +8,7 @@
 - Gmail: Open the email, click the three dots (⋮), and select Show original.
 <br>
 <br>
-<img width="1951" height="1096" alt="image" src="https://github.com/user-attachments/assets/684d3ca9-e73e-4658-9cff-bca5639be3ad" />
+<img width="1951"  alt="image" src="https://github.com/user-attachments/assets/684d3ca9-e73e-4658-9cff-bca5639be3ad" />
 <br>
 <br>
 
@@ -16,7 +16,7 @@
 - Select all the text in the header and copy it.
 
 <br>
-<img width="1913" height="1147" alt="image" src="https://github.com/user-attachments/assets/3ca951b6-d1a8-40b8-8e53-9593d9bf10e8" />
+<img width="1913" alt="image" src="https://github.com/user-attachments/assets/3ca951b6-d1a8-40b8-8e53-9593d9bf10e8" />
 <br>
 <br>
 
@@ -27,7 +27,7 @@
  <br>
 <br>
 
-  <img width="1919" height="1053" alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
+  <img width="1919"  alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
 <br>
 <br>
 
@@ -39,7 +39,7 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 <br>
 <br>
 
-<img width="1919" height="1054" alt="image" src="https://github.com/user-attachments/assets/ddd00744-08ab-42fb-bdb6-7cc06702d5f8" />
+<img width="1919"  alt="image" src="https://github.com/user-attachments/assets/ddd00744-08ab-42fb-bdb6-7cc06702d5f8" />
 
 ### Step 3: Analyze The Report
 - This is the most critical step. In the analyzer's report, look for the SPF, DKIM, and DMARC results.
@@ -54,7 +54,7 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 <br>
 <br>
 
-<img width="1918" height="909" alt="image" src="https://github.com/user-attachments/assets/eb5fb84a-2ef3-444a-a15c-65009272d68d" />
+<img width="1918"  alt="image" src="https://github.com/user-attachments/assets/eb5fb84a-2ef3-444a-a15c-65009272d68d" />
 <br>
 <br>
 
@@ -68,14 +68,14 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 - Conclusion: Since the email came from a Mailgun server, which is authorized in the SPF record, the SPF check passed.
   <br>
   <br>
-<img width="1917" height="874" alt="image" src="https://github.com/user-attachments/assets/9d3277b3-89e8-423a-a351-095dcef1f0a6" />
+<img width="1917"  alt="image" src="https://github.com/user-attachments/assets/9d3277b3-89e8-423a-a351-095dcef1f0a6" />
 <br>
 <br>
 
 ### Analyze the DKIM Failure
 
 <br>
-<img width="1917" height="989" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
+<img width="1917" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
 
 ### **Result:**
 Successfully analyzed the email header using the **Mail Header Analyzer (MHA)** tool.  
