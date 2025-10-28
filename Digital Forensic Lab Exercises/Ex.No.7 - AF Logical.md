@@ -1,12 +1,10 @@
 #  **Ex.No.7: Use AFLogical OSE to Extract Data from an Android Device**
+### **Aim:**
+To perform a logical forensic extraction from an Android device using **AFLogical OSE** by configuring ADB connectivity, installing the AFLogical APK, extracting user data artifacts (Contacts, SMS, Call Logs, MMS, Calendar), and securely transferring the extracted files to a PC for further analysis.
 
-##  **Description**
-**AFLogical OSE (Open Source Edition)** is a specialized forensic tool designed for logical extraction of data from Android devices.  
-This technique retrieves key user data—like contacts, call logs, and SMS messages—by leveraging the Android OS API, and does so typically without requiring root access.  
-It is a fundamental component of the **Open Source Android Forensics toolkit**, essential for investigations and academic studies.
 
----
 
+## **Procedure**
 ##  **STEP 1 — Initial Setup & File Extraction**
 
 ###  **Required Files (Pre-requisites)**
@@ -43,7 +41,7 @@ To enable the execution of `adb` commands directly from any Command Prompt or Po
    ```bash
    C:\DF\platform-tools
    ```
-   <img width="610" height="673" alt="image" src="https://github.com/user-attachments/assets/bf3d4690-98b2-4afc-9dcc-1b88deef2e71" />
+   <img width="610"  alt="image" src="https://github.com/user-attachments/assets/bf3d4690-98b2-4afc-9dcc-1b88deef2e71" />
 
 4. Click **OK** to save.
 
@@ -52,7 +50,7 @@ Open a Command Prompt and run:
 ```bash
 adb version
 ```
-<img width="1285" height="347" alt="image" src="https://github.com/user-attachments/assets/c16b02ed-1e48-4946-a562-043abb3e9e25" />
+<img width="1285"  alt="image" src="https://github.com/user-attachments/assets/c16b02ed-1e48-4946-a562-043abb3e9e25" />
 
 **Expected Output:**  
 Displays the ADB version number (e.g., *Android Debug Bridge version 1.0.41*).
@@ -79,7 +77,7 @@ Run:
 ```bash
 adb devices
 ```
-<img width="858" height="157" alt="image" src="https://github.com/user-attachments/assets/f84a2449-99e1-4a7f-8854-58f2964be372" />
+<img width="858"  alt="image" src="https://github.com/user-attachments/assets/f84a2449-99e1-4a7f-8854-58f2964be372" />
 
 
 **Expected Output:**  
@@ -116,7 +114,7 @@ To confirm a stable, authorized communication channel between the PC and Android
 
 ###  **Expected Output**
 
-<img width="858" height="157" alt="image" src="https://github.com/user-attachments/assets/3bebf98b-8dab-4d04-ba44-1dc70d7d2d62" />
+<img width="858" alt="image" src="https://github.com/user-attachments/assets/3bebf98b-8dab-4d04-ba44-1dc70d7d2d62" />
 
 **Troubleshooting:**  
 If *unauthorized*, replug cable and tap **Allow** again.
@@ -137,7 +135,7 @@ Transfer and install the forensic APK onto the Android device.
    ```bash
    adb install --bypass-low-target-sdk-block "C:\Users\Manya\Downloads\DF\ForensicLab\AFLogical-OSE_1.5.2.apk"
    ```
-   <img width="1464" height="183" alt="image" src="https://github.com/user-attachments/assets/b02f289c-3de4-42f5-90c1-518131a6e4f7" />
+   <img width="1464"  alt="image" src="https://github.com/user-attachments/assets/b02f289c-3de4-42f5-90c1-518131a6e4f7" />
 
 
 
@@ -180,14 +178,14 @@ Transfer extracted files from the device to the PC.
 ```bash
 adb pull /sdcard/aflogical C:\Users\Manya\Downloads
 ```
-<img width="1358" height="173" alt="image" src="https://github.com/user-attachments/assets/545baf69-e750-410a-b07a-657d60b91e97" />
+<img width="1358"  alt="image" src="https://github.com/user-attachments/assets/545baf69-e750-410a-b07a-657d60b91e97" />
 
 ###  **Verification**
 Files saved to:
 ```bash
 C:\Users\Manya\Downloads
 ```
-<img width="1254" height="361" alt="image" src="https://github.com/user-attachments/assets/22f021cb-f711-4268-88cb-eba0ed6c5684" />
+<img width="1254" alt="image" src="https://github.com/user-attachments/assets/22f021cb-f711-4268-88cb-eba0ed6c5684" />
 
 
 ---
@@ -202,10 +200,5 @@ The extracted data was stored in:
 ```bash
 /sdcard/aflogical/
 ```
-## **Reference Links**
-- **Android Platform Tools (ADB):** [https://developer.android.com/tools/releases/platform-tools](https://developer.android.com/tools/releases/platform-tools)  
-- **Santoku Linux (Source for AFLogical OSE):** [https://sourceforge.net/projects/santoku/](https://sourceforge.net/projects/santoku/)  
-- **Google USB Driver (Windows):** [https://developer.android.com/studio/run/win-usb](https://developer.android.com/studio/run/win-usb)
 
----
 
