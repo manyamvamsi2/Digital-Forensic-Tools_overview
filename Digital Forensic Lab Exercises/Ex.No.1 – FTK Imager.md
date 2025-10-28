@@ -1,20 +1,20 @@
 # Ex.No.1    FTK Imager: A Forensic Imaging Tool Overview
+## **Aim:**
+To acquire both **volatile memory (RAM)** and **non-volatile memory (disk image)** from a target system using **FTK Imager**, ensuring data integrity through proper forensic imaging procedures for further digital forensic analysis.
 
+---
 ## Acquiring Volatile Memory (RAM) Using FTK Imager
-<br>
-
 
 ### Steps to Capture RAM Using FTK Imager
-<br>
-
 ### 1. Run as Administrator
 - Open **FTK Imager** with administrative privileges.  
 - Right-click the FTK Imager icon and select **Run as administrator**.
 <br>
 <br>
 
-
- <img width="1575" height="763" alt="image" src="https://github.com/user-attachments/assets/739f9871-3976-41c3-be50-b8a8da805b63" />
+<p align="center">
+ <img width="600"  alt="image" src="https://github.com/user-attachments/assets/739f9871-3976-41c3-be50-b8a8da805b63" />
+</p>
 <br>
 <br>
 
@@ -22,8 +22,9 @@
 - In the top menu bar, click **File → Capture Memory...** from the dropdown list.
   <br>
 <br>
-
-   <img width="1919" height="1096" alt="image" src="https://github.com/user-attachments/assets/8b6eead1-d327-43b7-be00-1b081822ebe5" />
+<p align="center">
+  <img width="600"  alt="image" src="https://github.com/user-attachments/assets/8b6eead1-d327-43b7-be00-1b081822ebe5" />
+</p>
 <br>
 <br>
 
@@ -48,9 +49,9 @@ A dialog box will appear where you configure where and how the memory will be sa
 
 <br>
 <br>
-
- <img width="1918" height="1098" alt="image" src="https://github.com/user-attachments/assets/37f79f46-b802-4028-a10e-659874ebc6e2" />
-
+<p align="center">
+ <img width="600"  alt="image" src="https://github.com/user-attachments/assets/37f79f46-b802-4028-a10e-659874ebc6e2" />
+</p>
  
 <br>
 <br>
@@ -60,8 +61,9 @@ A dialog box will appear where you configure where and how the memory will be sa
 <br>
 <br>
 
-
-<img width="1914" height="868" alt="image" src="https://github.com/user-attachments/assets/1194796f-767d-4e59-8e3a-5962823bdda1" />
+<p align="center">
+ <img width="600"  alt="image" src="https://github.com/user-attachments/assets/1194796f-767d-4e59-8e3a-5962823bdda1" />
+</p>
 <br>
 <br>
 
@@ -81,8 +83,9 @@ A dialog box will appear where you configure where and how the memory will be sa
 
 <br>
 <br>
-<img width="1918" height="1066" alt="image" src="https://github.com/user-attachments/assets/479850a5-c2fb-4695-b830-2ab9dc3cc63d" />
-
+<p align="center">
+ <img width="600"  alt="image" src="https://github.com/user-attachments/assets/479850a5-c2fb-4695-b830-2ab9dc3cc63d" />
+</p>
 <br>
 <br>
 
@@ -99,7 +102,7 @@ A window will appear asking you to choose the source type:
 <br>
 <p align="center">
 
-<img width="591" height="433" alt="image" src="https://github.com/user-attachments/assets/057d577e-5327-44e8-93b5-da3b5fca1fed" />
+<img width="591"  alt="image" src="https://github.com/user-attachments/assets/057d577e-5327-44e8-93b5-da3b5fca1fed" />
 </p>
 <br>
 <br>
@@ -110,7 +113,7 @@ A window will appear asking you to choose the source type:
  <br>
 <br>
 <p align="center">
-<img width="583" height="428" alt="image" src="https://github.com/user-attachments/assets/7174ba85-f638-4ca5-b299-65dc9841d3ea" />
+<img width="583"  alt="image" src="https://github.com/user-attachments/assets/7174ba85-f638-4ca5-b299-65dc9841d3ea" />
 </p>
 <br>
 <br>
@@ -120,7 +123,7 @@ A window will appear asking you to choose the source type:
   <br>
 <br>
 <p align="center">
-<img width="508" height="490" alt="image" src="https://github.com/user-attachments/assets/6b826126-f3d0-4964-8578-4022e3ab6a08" /></p>
+<img width="508"  alt="image" src="https://github.com/user-attachments/assets/6b826126-f3d0-4964-8578-4022e3ab6a08" /></p>
 <br>
 
 #### Options:
@@ -131,7 +134,7 @@ A window will appear asking you to choose the source type:
 <br>
 <br>
 <p align="center">
-<img width="505" height="405" alt="image" src="https://github.com/user-attachments/assets/e5d806b5-edda-4f57-a60b-e4c58b8fd343" />
+<img width="505"  alt="image" src="https://github.com/user-attachments/assets/e5d806b5-edda-4f57-a60b-e4c58b8fd343" />
 </p>
 <br>
 <br>
@@ -140,7 +143,7 @@ A window will appear asking you to choose the source type:
   - Enter case details, examiner name, and description.  
   - This information is stored in the image metadata (important for documentation).
  <p align="center">
-<img width="511" height="407" alt="image" src="https://github.com/user-attachments/assets/93d6b429-5dae-4973-82d2-024545b537d5" />
+<img width="511"  alt="image" src="https://github.com/user-attachments/assets/93d6b429-5dae-4973-82d2-024545b537d5" />
 </p>
 <br>
 <br>
@@ -156,7 +159,7 @@ A window will appear asking you to choose the source type:
   <br>
   
 <p align="center">
-<img width="511" height="402" alt="image" src="https://github.com/user-attachments/assets/bba79e8f-512d-4097-b23c-e230cbe166a3" />
+<img width="511"  alt="image" src="https://github.com/user-attachments/assets/bba79e8f-512d-4097-b23c-e230cbe166a3" />
 </p>
 <br>
 <br>
@@ -182,16 +185,7 @@ A window will appear asking you to choose the source type:
 - Matching hashes confirm the forensic image’s integrity.
 
 ---
-## Notes
-
-- Always use a **write-blocker** to prevent modifications to the evidence.  
-- **Hash verification** is critical to maintain a chain of custody and admissibility in court.  
-- **Image Fragmentation** is useful for large drives or storage limitations.
----
-
-## References
-
-- [FTK Imager Official Website](https://accessdata.com/product-download/ftk-imager-version-4-5)  
-- FTK Imager Documentation
-
+### **Result:**
+Successfully captured the **volatile memory (RAM)** and **non-volatile memory (disk image)** of the target system using **FTK Imager**.  
+The generated image files were verified using **MD5** and **SHA1** hash values, confirming the **integrity and authenticity** of the acquired forensic data.
 
