@@ -3,13 +3,6 @@
 ## Aim
 Perform a defensive static analysis of a suspicious Windows executable using Ghidra to identify likely functionality, extract Indicators of Compromise (IOCs), and document findings — without executing the sample.
 
-
-
-## Safety Precautions
-- Do **not** run the sample on your host machine.  
-- Use an air-gapped VM or sandbox. Take a snapshot before any work.  
-- If you must perform dynamic analysis, do so in a fully instrumented isolated environment.
-
 ## Procedure 
  
  ## 1. **Workspace setup**
@@ -21,7 +14,7 @@ Perform a defensive static analysis of a suspicious Windows executable using Ghi
    - Compute hashes for tracking:
      - `sha256sum payload.exe` → record SHA256.
      - `md5sum payload.exe` → record MD5.
-   <img width="1062" height="187" alt="image" src="https://github.com/user-attachments/assets/5b06a69a-bacd-4108-8bbe-9567ba22fee9" />
+   <img width="1062"  alt="image" src="https://github.com/user-attachments/assets/5b06a69a-bacd-4108-8bbe-9567ba22fee9" />
 
    - Note PE characteristics (32/64-bit) using PE viewers or Ghidra import info.
 
@@ -30,16 +23,16 @@ Perform a defensive static analysis of a suspicious Windows executable using Ghi
    - Open Ghidra → New Project → Import `payload.exe`.
    - On import, accept recommended loader options; enable auto-analysis (function recovery, decompiler).
  <br>
- <img width="1882" height="1028" alt="image" src="https://github.com/user-attachments/assets/31b44c71-a091-44f1-b690-53e93559457a" />
+ <img width="1882" alt="image" src="https://github.com/user-attachments/assets/31b44c71-a091-44f1-b690-53e93559457a" />
  <br>
- <img width="1888" height="1076" alt="image" src="https://github.com/user-attachments/assets/2648fc22-001c-400a-afdc-3f71e6c0026b" />
+ <img width="1888"  alt="image" src="https://github.com/user-attachments/assets/2648fc22-001c-400a-afdc-3f71e6c0026b" />
 <br>
 
 ## 4. **Initial navigation**
    - Open **Listing** and **Symbol Tree**. Locate entry point and main-like functions.
    - Open **Decompiler** for the entry function to get C-like pseudocode.
  <br>
- <img width="1911" height="1056" alt="image" src="https://github.com/user-attachments/assets/089183b1-819b-4141-925c-0fa88513b02c" />
+ <img width="1911"  alt="image" src="https://github.com/user-attachments/assets/089183b1-819b-4141-925c-0fa88513b02c" />
  <br>
 
 ## 5. Investigate imports & APIs (locate, bookmark, map to behavior)
@@ -55,9 +48,9 @@ Perform a defensive static analysis of a suspicious Windows executable using Ghi
   - ``socket/connect → probable C2``
   - ``RegSetValueEx → probable persistence``
 
-<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/d2df11c0-02cd-4ebc-80ee-73e0d500d0c2" />
+<img width="1898"  alt="image" src="https://github.com/user-attachments/assets/d2df11c0-02cd-4ebc-80ee-73e0d500d0c2" />
 <br>
-<img width="1630" height="708" alt="image" src="https://github.com/user-attachments/assets/9e9dbd5f-63d6-46e1-9fb0-93a0499ef320" />
+<img width="1630"  alt="image" src="https://github.com/user-attachments/assets/9e9dbd5f-63d6-46e1-9fb0-93a0499ef320" />
 
 <br>
 
