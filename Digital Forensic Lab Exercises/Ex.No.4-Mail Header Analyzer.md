@@ -77,3 +77,8 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 <br>
 <img width="1917" height="989" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
 
+### **Result:**
+Successfully analyzed the email header using the **Mail Header Analyzer (MHA)** tool.  
+The report revealed that the email passed **SPF** and **DMARC** checks but failed **DKIM authentication**, indicating a potential issue with the sender’s digital signature.  
+This experiment demonstrates how MHA helps trace the **email’s origin**, **verify authenticity**, and **detect spoofing or forgery attempts** through detailed header analysis.
+
