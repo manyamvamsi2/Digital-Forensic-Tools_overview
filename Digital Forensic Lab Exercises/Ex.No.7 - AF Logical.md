@@ -42,7 +42,7 @@ To enable the execution of `adb` commands directly from any Command Prompt or Po
    ```bash
    C:\DF\platform-tools
    ```
-   <img width="610"  alt="image" src="https://github.com/user-attachments/assets/bf3d4690-98b2-4afc-9dcc-1b88deef2e71" />
+   <img width="310"  alt="image" src="https://github.com/user-attachments/assets/bf3d4690-98b2-4afc-9dcc-1b88deef2e71" />
 
 4. Click **OK** to save.
 
