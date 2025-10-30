@@ -66,7 +66,7 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 #### Analyze the DKIM Failure
 
 <p align="center">
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
+<img width="700" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
 </p>
 
 
