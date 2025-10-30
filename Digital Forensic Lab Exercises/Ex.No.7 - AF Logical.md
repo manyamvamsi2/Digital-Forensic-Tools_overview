@@ -1,18 +1,19 @@
-#  **Ex.No.7: Use AFLogical OSE to Extract Data from an Android Device**
-### **Aim:**
+##  **Ex.No.7: Use AFLogical OSE to Extract Data from an Android Device**
+## **Aim:**
 To perform a logical forensic extraction from an Android device using **AFLogical OSE** by configuring ADB connectivity, installing the AFLogical APK, extracting user data artifacts (Contacts, SMS, Call Logs, MMS, Calendar), and securely transferring the extracted files to a PC for further analysis.
 
 
 
 ## **Procedure**
-##  **STEP 1 — Initial Setup & File Extraction**
 
-###  **Required Files (Pre-requisites)**
+####  **STEP 1 — Initial Setup & File Extraction**
+
+#####  **Required Files (Pre-requisites)**
 - **Android Platform Tools (ADB):** For device communication.  
 - **AFLogical OSE ZIP (Source/APK):** The core forensic tool.  
 - **Google USB Driver (for Windows):** To ensure PC-device connectivity.
 
-###  **Instructions**
+#####  **Instructions**
 1. Create the primary lab folder:
    ```bash
    C:\DF
@@ -28,12 +29,12 @@ To perform a logical forensic extraction from an Android device using **AFLogica
 
 ---
 
-##  **STEP 2 — Configure System Environment (PATH)**
+####  **STEP 2 — Configure System Environment (PATH)**
 
-###  **Purpose**
+#####  **Purpose**
 To enable the execution of `adb` commands directly from any Command Prompt or PowerShell window without specifying the full directory path.
 
-###  **Steps**
+#####  **Steps**
 1. Navigate to:  
    **Control Panel → System → Advanced system settings → Environment Variables**
 2. Under *User Variables*, select **Path** and click **Edit**.
@@ -45,24 +46,20 @@ To enable the execution of `adb` commands directly from any Command Prompt or Po
 
 4. Click **OK** to save.
 
-###  **Verification**
+#####  **Verification**
 Open a Command Prompt and run:
 ```bash
 adb version
 ```
 <img width="1285"  alt="image" src="https://github.com/user-attachments/assets/c16b02ed-1e48-4946-a562-043abb3e9e25" />
 
-**Expected Output:**  
-Displays the ADB version number (e.g., *Android Debug Bridge version 1.0.41*).
 
----
+####  **STEP 3 — Install Google USB Driver (Windows Specific)**
 
-##  **STEP 3 — Install Google USB Driver (Windows Specific)**
-
-###  **Purpose**
+#####  **Purpose**
 This driver allows Windows to identify and communicate with the connected Android device via ADB.
 
-###  **Steps**
+#####  **Steps**
 1. Connect the Android phone via USB.
 2. Open **Device Manager** and locate the phone.
 3. Right-click → **Update Driver** → **Browse my computer for drivers**.
@@ -72,7 +69,7 @@ This driver allows Windows to identify and communicate with the connected Androi
    ```
 5. Click **Next** to install.
 
-###  **Verification**
+#####  **Verification**
 Run:
 ```bash
 adb devices
@@ -80,14 +77,11 @@ adb devices
 <img width="858"  alt="image" src="https://github.com/user-attachments/assets/f84a2449-99e1-4a7f-8854-58f2964be372" />
 
 
-**Expected Output:**  
-Device listed without 'offline' or 'no permissions' status.
-
 ---
 
-##  **STEP 4 — Prepare the Android Device (Developer Options)**
+####  **STEP 4 — Prepare the Android Device (Developer Options)**
 
-###  **Steps**
+#####  **Steps**
 1. On the device:  
    **Settings → About phone → Tap "Build number" 7 times**
 2. Go back to **Settings → Developer options**.
@@ -97,12 +91,12 @@ Device listed without 'offline' or 'no permissions' status.
 
 ---
 
-##  **STEP 5 — Establish and Verify ADB Connection**
+####  **STEP 5 — Establish and Verify ADB Connection**
 
-###  **Purpose**
+#####  **Purpose**
 To confirm a stable, authorized communication channel between the PC and Android device.
 
-###  **Steps**
+#####  **Steps**
 1. Ensure the phone is connected.
 2. Run:
    ```bash
@@ -112,7 +106,7 @@ To confirm a stable, authorized communication channel between the PC and Android
 
 3. Tap **Allow** on the phone when prompted.
 
-###  **Expected Output**
+#####  **Expected Output**
 
 <img width="858" alt="image" src="https://github.com/user-attachments/assets/3bebf98b-8dab-4d04-ba44-1dc70d7d2d62" />
 
@@ -121,12 +115,12 @@ If *unauthorized*, replug cable and tap **Allow** again.
 
 ---
 
-##  **STEP 6 — Deploy AFLogical OSE to the Device**
+####  **STEP 6 — Deploy AFLogical OSE to the Device**
 
-###  **Purpose**
+#####  **Purpose**
 Transfer and install the forensic APK onto the Android device.
 
-###  **Steps**
+#####  **Steps**
 1. Ensure APK is located at:
    ```bash
    C:\DF\aflogical-ose\AFLogical-OSE.apk
@@ -141,12 +135,12 @@ Transfer and install the forensic APK onto the Android device.
 
 ---
 
-##  **STEP 7 — Execute Logical Data Extraction**
+####  **STEP 7 — Execute Logical Data Extraction**
 
-###  **Purpose**
+#####  **Purpose**
 Initiate data retrieval using AFLogical.
 
-###  **Steps**
+#####  **Steps**
 1. Open **AFLogical** on the device.  
 2. Grant permissions (Contacts, SMS, Call Logs, Storage).  
 3. Select:
@@ -158,7 +152,7 @@ Initiate data retrieval using AFLogical.
 4. Tap **Start Extraction**.  
 5. Wait until extraction completes.
 
-###  **Default Save Location**
+#####  **Default Save Location**
 ```bash
 /sdcard/aflogical/
 ```
@@ -169,18 +163,19 @@ or
 
 ---
 
-##  **STEP 8 — Collect Extracted Data (Pull to PC)**
 
-###  **Purpose**
+####  **STEP 8 — Collect Extracted Data (Pull to PC)**
+
+#####  **Purpose**
 Transfer extracted files from the device to the PC.
 
-###  **Command**
+#####  **Command**
 ```bash
 adb pull /sdcard/aflogical C:\Users\Manya\Downloads
 ```
 <img width="1358"  alt="image" src="https://github.com/user-attachments/assets/545baf69-e750-410a-b07a-657d60b91e97" />
 
-###  **Verification**
+#####  **Verification**
 Files saved to:
 ```bash
 C:\Users\Manya\Downloads
@@ -189,7 +184,16 @@ C:\Users\Manya\Downloads
 
 
 ---
----
+
+# Rubrics
+
+| Criteria | Mark Allotted | Mark Awarded |
+|---|---:|---:|
+| 1. GitHub Activity & Submission Regularity | 3 | |
+| 2. Application of Forensic Tools & Practical Execution | 3 | |
+| 3. Documentation & Reporting | 2 | |
+| 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+| *Total* | *10* | |
 
 ##  **Result**
 
