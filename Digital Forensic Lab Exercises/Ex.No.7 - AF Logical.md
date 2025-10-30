@@ -147,10 +147,7 @@ Initiate data retrieval using AFLogical.
 5. Wait until extraction completes.
 
 #####  **Default Save Location**
-```bash
-/sdcard/aflogical/
-```
-or
+
 ```bash
 /storage/emulated/0/aflogical/
 ```
