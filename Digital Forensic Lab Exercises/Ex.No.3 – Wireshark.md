@@ -67,7 +67,7 @@ HTML Form URL Encoded
 
 
   <p align="center">
-  <img width="500"  alt="image" src="https://github.com/user-attachments/assets/3b2833a8-7008-4bb7-8f67-c295049e9364" />
+  <img width="400"  alt="image" src="https://github.com/user-attachments/assets/3b2833a8-7008-4bb7-8f67-c295049e9364" />
   </p>
 
 
