@@ -1,3 +1,5 @@
+<div style="border: 3px solid #4CAF50; border-radius: 12px; padding: 20px; background-color: #f9fff9;">
+
 ## Ex.No.1 FTK Imager: A Forensic Imaging Tool 
 ### Aim:
 To acquire both **volatile memory (RAM)** and **non-volatile memory (disk image)** from a target system using **FTK Imager**, ensuring data integrity through proper forensic imaging procedures for further digital forensic analysis.
@@ -171,8 +173,10 @@ A window will appear asking you to choose the source type:
 | 2. Application of Forensic Tools & Practical Execution | 3 | |
 | 3. Documentation & Reporting | 2 | |
 | 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
-| *Total* | *10* | |
+| *Total* | *10* | |
 
 ## **Result:**
 Successfully captured the **volatile memory (RAM)** and **non-volatile memory (disk image)** of the target system using **FTK Imager**.  
 The generated image files were verified using **MD5** and **SHA1** hash values, confirming the **integrity and authenticity** of the acquired forensic data.    
+
+</div>
