@@ -24,7 +24,7 @@
 - Navigate to a site like MXToolbox Email Header Analyzer.
 
   <p align="center">
-  <img width="600"  alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
+  <img width="700"  alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
   </p>
 
 - Paste the entire header you copied into the analysis box.
