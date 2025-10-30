@@ -31,7 +31,7 @@ To perform a logical forensic extraction from an Android device using **AFLogica
 
 ####  **STEP 2 — Configure System Environment (PATH)**
 
-#####  **Purpose**
+
 To enable the execution of `adb` commands directly from any Command Prompt or PowerShell window without specifying the full directory path.
 
 #####  **Steps**
@@ -56,7 +56,6 @@ adb version
 
 ####  **STEP 3 — Install Google USB Driver (Windows Specific)**
 
-#####  **Purpose**
 This driver allows Windows to identify and communicate with the connected Android device via ADB.
 
 #####  **Steps**
@@ -93,7 +92,6 @@ adb devices
 
 ####  **STEP 5 — Establish and Verify ADB Connection**
 
-#####  **Purpose**
 To confirm a stable, authorized communication channel between the PC and Android device.
 
 #####  **Steps**
@@ -106,8 +104,6 @@ To confirm a stable, authorized communication channel between the PC and Android
 
 3. Tap **Allow** on the phone when prompted.
 
-#####  **Expected Output**
-
 <img width="858" alt="image" src="https://github.com/user-attachments/assets/3bebf98b-8dab-4d04-ba44-1dc70d7d2d62" />
 
 **Troubleshooting:**  
@@ -117,7 +113,6 @@ If *unauthorized*, replug cable and tap **Allow** again.
 
 ####  **STEP 6 — Deploy AFLogical OSE to the Device**
 
-#####  **Purpose**
 Transfer and install the forensic APK onto the Android device.
 
 #####  **Steps**
@@ -129,7 +124,7 @@ Transfer and install the forensic APK onto the Android device.
    ```bash
    adb install --bypass-low-target-sdk-block "C:\Users\Manya\Downloads\DF\ForensicLab\AFLogical-OSE_1.5.2.apk"
    ```
-   <img width="1464"  alt="image" src="https://github.com/user-attachments/assets/b02f289c-3de4-42f5-90c1-518131a6e4f7" />
+   <img width="600"  alt="image" src="https://github.com/user-attachments/assets/b02f289c-3de4-42f5-90c1-518131a6e4f7" />
 
 
 
@@ -137,7 +132,6 @@ Transfer and install the forensic APK onto the Android device.
 
 ####  **STEP 7 — Execute Logical Data Extraction**
 
-#####  **Purpose**
 Initiate data retrieval using AFLogical.
 
 #####  **Steps**
@@ -166,7 +160,6 @@ or
 
 ####  **STEP 8 — Collect Extracted Data (Pull to PC)**
 
-#####  **Purpose**
 Transfer extracted files from the device to the PC.
 
 #####  **Command**
