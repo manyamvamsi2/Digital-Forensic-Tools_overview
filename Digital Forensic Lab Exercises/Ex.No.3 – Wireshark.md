@@ -7,9 +7,7 @@ To capture network traffic using **Wireshark** and demonstrate the interception 
 ## Procedure: Capturing Plaintext Passwords
 
 #### Step 1: Start Capturing Packets
-- First, open Wireshark. You will see a list of all available network interfaces (e.g., "Wi-Fi," "Ethernet").
-
-
+- First, open Wireshark. You will see a list of all available network interfaces 
 - Select the interface your computer is using to connect to the internet (in this case, Wi-Fi).
 
   
