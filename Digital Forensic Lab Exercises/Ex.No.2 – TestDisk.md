@@ -12,7 +12,7 @@ To use TestDisk step by step to recover a missing partition and repair a corrupt
 - Select the [Create] option to generate a log file of the recovery session. This is helpful for future reference or troubleshooting.
 
 <p align="center">
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/2364d9ca-bfde-4929-94d3-82dd2b0f35a7" />
+<img width="300"  alt="image" src="https://github.com/user-attachments/assets/2364d9ca-bfde-4929-94d3-82dd2b0f35a7" />
 </p>
 
 
