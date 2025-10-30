@@ -40,7 +40,7 @@ To detect and extract hidden or steganographic data from image files using the *
    hexdump -C extracted_data.bin | head
    ```
 7. Record findings such as file name, detection method, and extracted data type.
-
+   <br>
 
 # Rubrics
 
