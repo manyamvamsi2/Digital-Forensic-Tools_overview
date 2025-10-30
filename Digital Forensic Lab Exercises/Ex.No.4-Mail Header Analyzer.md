@@ -1,4 +1,5 @@
 ## Ex.No.4   MHA (Mail Header Analyzer)
+
 ## Aim :
 - The aim is to use a Mail Header Analyzer (MHA) to trace an email's origin and verify its authenticity by examining its header for signs of spoofing.
 ## Procedure
@@ -7,7 +8,7 @@
 
 - Gmail: Open the email, click the three dots (⋮), and select Show original.
 <p align="center">
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/684d3ca9-e73e-4658-9cff-bca5639be3ad" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/684d3ca9-e73e-4658-9cff-bca5639be3ad" />
 </p>
 
 
@@ -66,7 +67,8 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 <p align="center">
 <img width="500" alt="image" src="https://github.com/user-attachments/assets/8c62253c-68c6-42cc-b30e-d5581f4494ab" />
 </p>
----
+
+
 
 ## Rubrics
 
