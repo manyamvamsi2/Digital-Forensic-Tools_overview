@@ -8,7 +8,7 @@ To monitor and identify suspicious process activities in a Windows system using 
 1. **Download and extract Procmon** from the Microsoft Sysinternals site.
 2. **Run Procmon as Administrator** to allow system-level monitoring.
    <p align="center">
-       <img width="600"  alt="image" src="https://github.com/user-attachments/assets/c3f5f5f2-cdfa-4bd5-9653-9d6d0632d95e" />
+       <img width="400"  alt="image" src="https://github.com/user-attachments/assets/c3f5f5f2-cdfa-4bd5-9653-9d6d0632d95e" />
    </p>
 4. **Start Capture** by clicking the **Capture Events (Ctrl + E)** icon.
   <p align="center">
