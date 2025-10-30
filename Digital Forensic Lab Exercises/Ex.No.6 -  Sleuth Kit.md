@@ -81,7 +81,7 @@ Extract and examine file metadata to gather crucial historical information.
     ```css
     istat.exe -o 63  "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01" 11341 > C:\Users\Manya\Downloads\recovered_file_part2.txt
     ```
-    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/053a2308-b9c4-4729-9ba9-10c11e36e3b7" />
+    <img width="800"  alt="image" src="https://github.com/user-attachments/assets/053a2308-b9c4-4729-9ba9-10c11e36e3b7" />
 
     * *Purpose:* Provides detailed information about a file or directory inode, including **MAC times** (Modified, Accessed, Changed), size, links, and allocation status.
 
@@ -95,7 +95,7 @@ Constructing a timeline of file system activity is vital for reconstructing even
     ```css
     fls.exe -m / -r -o 63 "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01" > C:\Users\Manya\Downloads\body.txt
     ```
-    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/c7630900-1e89-42b0-bb75-3ae6ef15c8b4" />
+    <img width="800"  alt="image" src="https://github.com/user-attachments/assets/c7630900-1e89-42b0-bb75-3ae6ef15c8b4" />
 
     
 2.  **Create the Timeline with `mactime`:**
