@@ -1,11 +1,11 @@
-#  Ex No - 06: Use Sleuth Kit to Analyze Digital Evidence
+##  Ex No - 06: Use Sleuth Kit to Analyze Digital Evidence
 
 ## **Aim:**
 To use **The Sleuth Kit (TSK)** command-line tools to analyze a forensic disk image — identify partition layout, enumerate the file system, recover deleted or hidden files, extract file metadata (MAC times), build a timeline of activity, and produce artifacts and reports suitable for forensic investigation.
 
 ---
 ## **Procedure**
-##  Step 1: Install Sleuth Kit
+####  Step 1: Install Sleuth Kit
 
 1.  **Download Sleuth Kit:**
     * Visit the official Sleuth Kit website or use the provided link: `https://drive.google.com/drive/u/1/folders/1ilSFY7Tqn2L7AjQGhq8yJ8kixc_xTU-v`
@@ -15,7 +15,7 @@ To use **The Sleuth Kit (TSK)** command-line tools to analyze a forensic disk im
 
 ---
 
-##  Step 2: Acquire the Disk Image
+####  Step 2: Acquire the Disk Image
 
 Before analysis, a forensic disk image of the storage device (hard drive, memory card, etc.) is required.
 
@@ -29,7 +29,7 @@ Before analysis, a forensic disk image of the storage device (hard drive, memory
 
 ---
 
-##  Step 3: Mount the Disk Image (Optional)
+####  Step 3: Mount the Disk Image (Optional)
 
 Mounting the image can simplify navigating the file system in a graphical environment.
 
@@ -38,7 +38,7 @@ Mounting the image can simplify navigating the file system in a graphical enviro
 
 ---
 
-##  Step 4: Analyze the File System
+####  Step 4: Analyze the File System
 
 Use the Sleuth Kit command-line tools to examine the file system structure and content.
 
@@ -79,7 +79,7 @@ Use the Sleuth Kit command-line tools to examine the file system structure and c
 
 ---
 
-##  Step 5: Analyze Metadata
+####  Step 5: Analyze Metadata
 
 Extract and examine file metadata to gather crucial historical information.
 
@@ -93,7 +93,7 @@ Extract and examine file metadata to gather crucial historical information.
 
 ---
 
-##  Step 6: Timeline Analysis (Optional)
+####  Step 6: Timeline Analysis (Optional)
 
 Constructing a timeline of file system activity is vital for reconstructing events.
 
@@ -112,7 +112,7 @@ Constructing a timeline of file system activity is vital for reconstructing even
 
 ---
 
-##  Step 7: Generate a Report
+####  Step 7: Generate a Report
 
 Document the investigative findings in a structured report.
 
@@ -121,7 +121,7 @@ Document the investigative findings in a structured report.
 
 ---
 
-##  Step 8: Finalize and Store Evidence
+####  Step 8: Finalize and Store Evidence
 
 Ensure the integrity and secure storage of all evidence.
 
@@ -130,7 +130,7 @@ Ensure the integrity and secure storage of all evidence.
 
 ---
 
-### **Result:**
+## **Result:**
 Using Sleuth Kit, the disk image was successfully examined. Key outcomes include:
 
 - The partition table and file system type were identified.  
