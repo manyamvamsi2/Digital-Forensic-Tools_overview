@@ -48,7 +48,7 @@ Click the "Analyze" button to get a parsed, easy-to-read report.
 - Check DKIM Status: DKIM Alignment passed, but DKIM Authenticated failed (❌). This is a critical finding and indicates a problem with the email's digital signature.
 >
 <p align="center">
-<img width="600"  alt="image" src="https://github.com/user-attachments/assets/eb5fb84a-2ef3-444a-a15c-65009272d68d" />
+<img width="400"  alt="image" src="https://github.com/user-attachments/assets/eb5fb84a-2ef3-444a-a15c-65009272d68d" />
 </p>
 
 #### Investigate the SPF Record and Email Path
