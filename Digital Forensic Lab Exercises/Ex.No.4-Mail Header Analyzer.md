@@ -15,7 +15,7 @@
 - Select all the text in the header and copy it.
 
 <p align="center">
-<img width="500" alt="image" src="https://github.com/user-attachments/assets/3ca951b6-d1a8-40b8-8e53-9593d9bf10e8" />
+<img width="600" alt="image" src="https://github.com/user-attachments/assets/3ca951b6-d1a8-40b8-8e53-9593d9bf10e8" />
 </p>
 
 #### Step 2: Use a Mail Header Analyzer (MHA)
@@ -24,7 +24,7 @@
 - Navigate to a site like MXToolbox Email Header Analyzer.
 
   <p align="center">
-  <img width="500"  alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
+  <img width="600"  alt="image" src="https://github.com/user-attachments/assets/43254222-09b5-4a21-9aae-6f1705bb23aa" />
   </p>
 
 - Paste the entire header you copied into the analysis box.
@@ -33,8 +33,9 @@
 Click the "Analyze" button to get a parsed, easy-to-read report.
 
 <p align="center">
-<img width="500"  alt="image" src="https://github.com/user-attachments/assets/ddd00744-08ab-42fb-bdb6-7cc06702d5f8" />
+<img width="600"  alt="image" src="https://github.com/user-attachments/assets/ddd00744-08ab-42fb-bdb6-7cc06702d5f8" />
 </p>
+
 #### Step 3: Analyze The Report
 - This is the most critical step. In the analyzer's report, look for the SPF, DKIM, and DMARC results.
 #### Review the Overall Delivery Summary
