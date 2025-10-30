@@ -6,23 +6,17 @@ To use **The Sleuth Kit (TSK)** command-line tools to analyze a forensic disk im
 ---
 ## **Procedure**
 ####  Step 1: Install Sleuth Kit
+##### **Install Sleuth Kit:**
 
-1.  **Download Sleuth Kit:**
-    * Visit the official Sleuth Kit website or use the provided link: `https://drive.google.com/drive/u/1/folders/1ilSFY7Tqn2L7AjQGhq8yJ8kixc_xTU-v`
-    * Download the latest stable version of Sleuth Kit compiled for Windows.
-2.  **Install Sleuth Kit:**
-    * Run the installer and follow the on-screen instructions to install TSK on your Windows machine.
+  Download and install **Sleuth Kit** from the official website:  
+ [https://sleuthkit.org/download/](https://sleuthkit.org/download/)
 
 ---
 
 ####  Step 2: Acquire the Disk Image
 
 Before analysis, a forensic disk image of the storage device (hard drive, memory card, etc.) is required.
-
-1.  **Create Disk Image:**
-    * Use a forensic imaging tool like **FTK Imager** or **`dd`** to create a bit-by-bit copy of the evidence.
-    * Ensure the image is in a format supported by Sleuth Kit, such as **`.dd`**, **`.raw`**, **`.img`**, or **`.E01`**.
-2.  **Download Evidence Files (for this exercise):**
+#####  **Download Evidence Files (for this exercise):**
     * Download the following sample files from the Google Drive link provided:
         * `4Dell Latitude CPi.E01`
         * `4Dell Latitude CPi.E02`
@@ -47,33 +41,33 @@ Use the Sleuth Kit command-line tools to examine the file system structure and c
     # Open Command Prompt (CMD) and change directory to the TSK installation path
     cd "C:\Program Files (x86)\sleuthkit-4.14.0-win32\bin"  
     ```
-    <img width="1480"  alt="image" src="https://github.com/user-attachments/assets/7a809110-3b57-447e-a19d-a65f14ecb3a2" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/7a809110-3b57-447e-a19d-a65f14ecb3a2" />
 
 2.  **Identify File System Type with `fsstat`:**
     ```bash
     fsstat.exe -o 63 "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01"
     ```
-    <img width="1911"  alt="image" src="https://github.com/user-attachments/assets/f8579e3d-d40e-4b5d-94f9-e9a1e0e178d3" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/f8579e3d-d40e-4b5d-94f9-e9a1e0e178d3" />
 
 3.  **List Partitions with `mmls`:**
     ```bash
     mmls.exe "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01"
     ```
-    <img width="1372"  alt="image" src="https://github.com/user-attachments/assets/1f22d052-9ed1-4eb2-a6a1-f0ab5afe8f0b" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/1f22d052-9ed1-4eb2-a6a1-f0ab5afe8f0b" />
 
     * *Purpose:* Lists the layout and addresses of all partitions within the disk image.
 4.  **Analyze File System with `fls`:**
     ```bash
     fls.exe -r -o 63 "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01"
     ```
-    <img width="1920"  alt="image" src="https://github.com/user-attachments/assets/c8e24f54-5892-400b-b7ac-46a7f09d089e" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/c8e24f54-5892-400b-b7ac-46a7f09d089e" />
 
     * *Purpose:* Recursively lists all files and directories in the file system, providing their metadata (inode) numbers.
 5.  **Recover Deleted Files with `icat`:**
     ```css
     icat.exe -o 63  "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01" 11341 > C:\Users\Manya\Downloads\recovered_file_part1.jpg
     ```
-    <img width="1388" alt="image" src="https://github.com/user-attachments/assets/f0fc9678-64b7-4b08-bdf5-37d33faa8f07" />
+    <img width="600" alt="image" src="https://github.com/user-attachments/assets/f0fc9678-64b7-4b08-bdf5-37d33faa8f07" />
 
     * *Purpose:* Extracts a specific file by its **inode number** (found using `fls`) to recover both allocated and unallocated (deleted) files.
 
@@ -87,7 +81,7 @@ Extract and examine file metadata to gather crucial historical information.
     ```css
     istat.exe -o 63  "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01" 11341 > C:\Users\Manya\Downloads\recovered_file_part2.txt
     ```
-    <img width="1498"  alt="image" src="https://github.com/user-attachments/assets/053a2308-b9c4-4729-9ba9-10c11e36e3b7" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/053a2308-b9c4-4729-9ba9-10c11e36e3b7" />
 
     * *Purpose:* Provides detailed information about a file or directory inode, including **MAC times** (Modified, Accessed, Changed), size, links, and allocation status.
 
@@ -101,7 +95,7 @@ Constructing a timeline of file system activity is vital for reconstructing even
     ```css
     fls.exe -m / -r -o 63 "C:\Users\Manya\Downloads\4Dell Latitude CPi.E01" > C:\Users\Manya\Downloads\body.txt
     ```
-    <img width="1911"  alt="image" src="https://github.com/user-attachments/assets/c7630900-1e89-42b0-bb75-3ae6ef15c8b4" />
+    <img width="600"  alt="image" src="https://github.com/user-attachments/assets/c7630900-1e89-42b0-bb75-3ae6ef15c8b4" />
 
     
 2.  **Create the Timeline with `mactime`:**
@@ -129,7 +123,15 @@ Ensure the integrity and secure storage of all evidence.
 2.  **Store Securely:** Store the archived evidence in a secure location, strictly following the **Chain of Custody** procedures to maintain legal admissibility.
 
 ---
+## Rubrics
 
+| Criteria | Mark Allotted | Mark Awarded |
+|---|---:|---:|
+| 1. GitHub Activity & Submission Regularity | 3 | |
+| 2. Application of Forensic Tools & Practical Execution | 3 | |
+| 3. Documentation & Reporting | 2 | |
+| 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+| *Total* | *10* | |
 ## **Result:**
 Using Sleuth Kit, the disk image was successfully examined. Key outcomes include:
 
