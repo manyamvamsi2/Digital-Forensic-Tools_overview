@@ -1,4 +1,4 @@
-# Ex.No.8 — Detect Hidden Data in Images Using zsteg (Linux)
+## Ex.No.8 — Detect Hidden Data in Images Using zsteg (Linux)
 
 ## Aim
 To detect and extract hidden or steganographic data from image files using the **zsteg** tool in Linux.
@@ -15,8 +15,7 @@ To detect and extract hidden or steganographic data from image files using the *
    <p align="center">
        <img width="811"  alt="image" src="https://github.com/user-attachments/assets/7b2cf64d-d74e-499c-8908-906bbd9c6cae" />
    </p>
-<br>
-<br>
+
 <p align="center">
    <img width="820"  alt="image" src="https://github.com/user-attachments/assets/6284c368-417c-4d8b-9e0f-84bb7b771dbe" />
 </p>
@@ -43,6 +42,15 @@ To detect and extract hidden or steganographic data from image files using the *
 7. Record findings such as file name, detection method, and extracted data type.
 
 
+# Rubrics
+
+| Criteria | Mark Allotted | Mark Awarded |
+|---|---:|---:|
+| 1. GitHub Activity & Submission Regularity | 3 | |
+| 2. Application of Forensic Tools & Practical Execution | 3 | |
+| 3. Documentation & Reporting | 2 | |
+| 4. Engagement, Problem-Solving & Team Collaboration | 2 | |
+| *Total* | *10* | |
 
 ## Result
 Hidden information was successfully detected and extracted from the given image using **zsteg** on Linux.
