@@ -14,7 +14,7 @@ To acquire both **volatile memory (RAM)** and **non-volatile memory (disk image)
 
 
  <p align="center">
- <img width="400"  alt="image" src="https://github.com/user-attachments/assets/739f9871-3976-41c3-be50-b8a8da805b63" />
+ <img width="300"  alt="image" src="https://github.com/user-attachments/assets/739f9871-3976-41c3-be50-b8a8da805b63" />
  </p>
 
 
@@ -180,3 +180,4 @@ Successfully captured the **volatile memory (RAM)** and **non-volatile memory (d
 The generated image files were verified using **MD5** and **SHA1** hash values, confirming the **integrity and authenticity** of the acquired forensic data.    
 
 </div>
+
