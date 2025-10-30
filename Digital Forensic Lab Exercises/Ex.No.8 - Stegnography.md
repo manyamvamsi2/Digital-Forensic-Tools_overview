@@ -25,7 +25,7 @@ To detect and extract hidden or steganographic data from image files using the *
    for f in *.png; do echo "=== $f ==="; zsteg "$f"; done
    ```
 <p align="center">
-  <img width="1994" alt="image" src="https://github.com/user-attachments/assets/8cc4d624-4e9c-4cb0-a527-7248fae190ce" />
+  <img width="2100" alt="image" src="https://github.com/user-attachments/assets/8cc4d624-4e9c-4cb0-a527-7248fae190ce" />
 </p>
 
 
